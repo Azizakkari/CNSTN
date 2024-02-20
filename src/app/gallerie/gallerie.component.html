@@ -1,74 +1,44 @@
+
+<div style="text-align:center">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="assets/images/7.jpg" alt="CNSTN" style="width: 300px;height: 250;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/2.jpg" alt="CNSTN" style="width: 300px;height: 250;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/3.jpg" alt="CNSTN" style="width: 300px;height: 250;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/4.jpg" alt="CNSTN" style="width: 300px;height: 250;" onclick="myFunction(this);">
+  </div>
+<!-- 
+  <div class="column">
+    <img src="assets/images/6.jpg" alt="CNSTN" style="width: 300px;height: 250;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/7.jpg" alt="CNSTN" style="width: 300px;height: 250;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/8.jpg" alt="CNSTN" style="width: 300px;height: 250;" onclick="myFunction(this);">
+  </div>
+
+
+  <div class="column">
+    <img src="assets/images/9.jpg" alt="CNSTN" style="width: 300px;height: 250;" onclick="myFunction(this);">
+  </div> -->
+</div>
+
+
 <div class="container">
-    <h1>Masonry + imagesLoaded, iteratively reveal items</h1>
-    
-    <div id="container"></div>
-    <div id="images">
-        <div class="item">
-            <img src="https://picsum.photos/100/200?random=1">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/200/300?random=2">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/300/400?random=3">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/200/100?random=4">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/300/200?random=5">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/400/300?random=6">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/500/500?random=7">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/500/600?random=8">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/100/300?random=9">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/250/300?random=10">
-        </div>
-            <div class="item">
-            <img src="https://picsum.photos/100/200?random=11">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/200/300?random=12">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/300/400?random=13">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/200/100?random=14">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/300/200?random=15">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/400/300?random=16">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/500/500?random=17">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/500/600?random=18">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/100/300?random=19">
-        </div>
-        <div class="item">
-            <img src="https://picsum.photos/250/300?random=110">
-        </div>
-    </div>
-   
-        
-        
-        
-    
-        </div>
-        
-        
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
