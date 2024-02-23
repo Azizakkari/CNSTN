@@ -1,0 +1,37 @@
+.sidebar {
+    position: fixed;
+    top: 1;
+    left: 1;
+    width: 200px;
+    height: 64%;
+    background: #343a40;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  
+  .sidebar-header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sidebar ul.components {
+    padding: 30px 10;
+  }
+  
+  .sidebar ul.components li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #4e565f;
+  }
+  
+  .sidebar ul.components li a {
+    color: #fff;
+  }
+  
+  .sidebar ul.components li a:hover {
+    background-color: #4a4e52;
+    color: #fff;
+  }
+  
+  .sidebar ul.components li a i {
+    margin-right: 10px;
+  }

@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+  }
+  .column {
+    float: inline-end;
+    width: 33.33%;
+    padding: 3.5%;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
