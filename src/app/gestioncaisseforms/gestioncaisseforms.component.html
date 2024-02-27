@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Panels with Contextual Classes</h2>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div  class="panel-heading">Gestion de la caisse </div>
+        <div class="panel-body">
+            <ul> @for(files of mesfichier; track files.id){
+               <li>
+                <a [href]="files.destination">{{files.nom}}</a>
+               </li> 
+            }
+
+
+
+            </ul>
+
+        </div>
+      </div>
+      </div>
+</div>

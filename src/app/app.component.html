@@ -2,23 +2,39 @@
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">CNSTN </a>
+        <a class="navbar-brand" routerLink="acceuilcnstn" routerLinkActive="active" >CNSTN </a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a routerLink="presentation" routerLinkActive="active" >Prrésentation</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">bibliothèque<span class="caret"></span></a>
+        <li class="active"><a routerLink="presentation" routerLinkActive="active" >Présentation</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Laboratoires<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Unité d'Hydrologie Isotopique</a></li>
+            <li><a href="#">Unité Radiopharmaceutiques</a></li>
           
           </ul>
-
+         
           
         </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Formulaires<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="gestioncaisse" routerLinkActive="active">Gestion de la caisse</a></li>
+            <li><a href="#">Formulaires Gestion des demandes administratives</a></li>
+            <li><a href="#">Formulaires Gestion des présences</a></li>
+            <li><a href="#">Formulaires Gestion de personnels</a></li>
+       
+
+          
+          </ul>
+         
+          
+        </li>
+        
         <li><a routerLink="gallerie" routerLinkActive="active">Gallerie</a></li>
         <li><a routerLink="gallerie2" routerLinkActive="active">Gallerie2</a></li>
-        <li><a routerLink="contact" routerLinkActive="active">contact</a></li>
+        <li><a routerLink="contact" routerLinkActive="active">Contact</a></li>
       </ul>
+
+
     </div>
   </nav>
 
@@ -27,6 +43,45 @@
 
 
 </div>
+
+
+
+
+<!-- 
+<div class="sidebar">
+  <div class="sidebar-header">
+    <h3>Menu</h3>
+  </div>
+  <ul class="list-unstyled components">
+    <li>
+      <a routerLink="/acceuilcnstn" routerLinkActive="active">
+        <i class="fa fa-home"></i> Accueil
+      </a>
+    </li>
+    <li>
+      <a routerLink="/gallerie" routerLinkActive="active">
+        <i class="fa fa-info-circle"></i>gallerie
+      </a>
+    </li>
+    <li>
+      <a routerLink="/services" routerLinkActive="active">
+        <i class="fa fa-cogs"></i> Services
+      </a>
+    </li>
+    <li>
+      <a routerLink="/contact" routerLinkActive="active">
+        <i class="fa fa-envelope"></i> Contact
+      </a>
+    </li>
+  </ul>
+</div> -->
+
+
+
+
+
+
+
 
 <!--   <div class="col-sm-4">
     <div class="sidenav">

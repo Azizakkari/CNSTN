@@ -5,7 +5,8 @@ import { Gallerie2Component } from './gallerie2/gallerie2.component';
 import { GallerieComponent } from './gallerie/gallerie.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { AcceuilcnstnComponent } from './acceuilcnstn/acceuilcnstn.component';
+import  jsondata from   '../data/fichier.json';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -15,4 +16,5 @@ import { ContactComponent } from './contact/contact.component';
 })
 export class AppComponent {
   title = 'cnstnnewsite';
+  mesfichier: any[]=jsondata.files;
 }

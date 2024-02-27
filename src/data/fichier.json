@@ -1,0 +1,19 @@
+{
+    "files": [
+        {
+            "id": 1,
+            "nom": "memoire de deplacement",
+            "destination": "assets/doc/memoire.pdf"
+        },
+        {
+            "id": 2,
+            "nom": "note de frais",
+            "destination": "assets/doc/notedefrais.pdf"
+        },
+        {
+            "id": 3,
+            "nom": "Demande de renouvellement de fond de roulement",
+            "destination": "assets/doc/renouvellement.pdf"
+        }
+    ]
+}
