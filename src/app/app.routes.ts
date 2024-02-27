@@ -12,6 +12,7 @@ export const routes: Routes = [
     {path: 'gallerie', component: GallerieComponent},
     {path: 'gallerie2', component: Gallerie2Component},
    {path: 'acceuilcnstn',component:AcceuilcnstnComponent},
-   {path: 'gestioncaisse',component:GestioncaisseformsComponent}
+   {path: 'gestioncaisse',component:GestioncaisseformsComponent},
+   {path: '', component:AcceuilcnstnComponent}
 
 ];
