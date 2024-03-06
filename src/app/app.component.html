@@ -1,119 +1,137 @@
 
 <div >
 
-<!--   
-<app-header2></app-header2> -->
+    <!--   
+    <app-header2></app-header2> -->
+    
+    <div>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" routerLink="acceuilcnstn" routerLinkActive="active" >CNSTN </a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a routerLink="presentation" routerLinkActive="active" >Présentation</a></li>
+            <li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="#">Laboratoires<span class="caret"></span></a>
+              <ul class="dropdown-menu btn">
+                <li><a href="#">Unité d'Hydrologie Isotopique</a></li>
+                <li><a href="#">Unité Radiopharmaceutiques</a></li>
+              
+              </ul>
 
-<div>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" routerLink="acceuilcnstn" routerLinkActive="active" >CNSTN </a>
+
+
+             <li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="#">Administrateur<span class="caret"></span></a>
+              <ul class="dropdown-menu btn">
+                <li><a href="#">gestion des utilisateurs</a></li>
+                <li><a href="#">gestion d'equipement</a></li>
+                <li><a href="#">gestion de réservation</a></li>
+                
+              
+              </ul>
+
+
+
+              
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Formulaires<span class="caret"></span></a>
+              
+                <ul class="dropdown-menu btn"> @for(procedures of mesproc; track procedures.id){
+                    <li>
+                    <a href="#">{{procedures.nom}}</a>
+                    </li> 
+                 }
+     
+     
+     
+                 </ul>
+     
+    
+              
+                
+             
+              
+            </li>
+            
+            <li><a routerLink="gallerie" routerLinkActive="active">Gallerie</a></li>
+            <li><a routerLink="gallerie2" routerLinkActive="active">Gallerie2</a></li>
+            <li><a routerLink="contact" routerLinkActive="active">Contact</a></li>
+          </ul>
+    
+    
+        </div>
+      </nav>
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    <!-- 
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h3>Menu</h3>
       </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a routerLink="presentation" routerLinkActive="active" >Présentation</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Laboratoires<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Unité d'Hydrologie Isotopique</a></li>
-            <li><a href="#">Unité Radiopharmaceutiques</a></li>
-          
-          </ul>
-         
-          
+      <ul class="list-unstyled components">
+        <li>
+          <a routerLink="/acceuilcnstn" routerLinkActive="active">
+            <i class="fa fa-home"></i> Accueil
+          </a>
         </li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Formulaires<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a routerLink="gestioncaisse" routerLinkActive="active">Gestion de la caisse</a></li>
-            <li><a href="#">Formulaires Gestion des demandes administratives</a></li>
-            <li><a href="#">Formulaires Gestion des présences</a></li>
-            <li><a href="#">Formulaires Gestion de personnels</a></li>
-       
-
-          
-          </ul>
-         
-          
+        <li>
+          <a routerLink="/gallerie" routerLinkActive="active">
+            <i class="fa fa-info-circle"></i>gallerie
+          </a>
         </li>
-        
-        <li><a routerLink="gallerie" routerLinkActive="active">Gallerie</a></li>
-        <li><a routerLink="gallerie2" routerLinkActive="active">Gallerie2</a></li>
-        <li><a routerLink="contact" routerLinkActive="active">Contact</a></li>
+        <li>
+          <a routerLink="/services" routerLinkActive="active">
+            <i class="fa fa-cogs"></i> Services
+          </a>
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="active">
+            <i class="fa fa-envelope"></i> Contact
+          </a>
+        </li>
       </ul>
-
-
+    </div> -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--   <div class="col-sm-4">
+        <div class="sidenav">
+          <a href="#Unité d'Hydrologie Isotopique">Unité d'Hydrologie Isotopique</a>
+          <a href="#Unité  Radiopharmaceutiques">Unité  Radiopharmaceutiques</a>
+     
+        
+          <button class="dropdown-btn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a href="#contact">Search</a>
+        </div>
+        
+    
+        
+      </div> -->
+    
+      
+      
+      <div>  <router-outlet></router-outlet></div>  
+    
+       
+    <app-footer></app-footer>
     </div>
-  </nav>
-
-
-
-
-
-</div>
-
-
-
-
-<!-- 
-<div class="sidebar">
-  <div class="sidebar-header">
-    <h3>Menu</h3>
-  </div>
-  <ul class="list-unstyled components">
-    <li>
-      <a routerLink="/acceuilcnstn" routerLinkActive="active">
-        <i class="fa fa-home"></i> Accueil
-      </a>
-    </li>
-    <li>
-      <a routerLink="/gallerie" routerLinkActive="active">
-        <i class="fa fa-info-circle"></i>gallerie
-      </a>
-    </li>
-    <li>
-      <a routerLink="/services" routerLinkActive="active">
-        <i class="fa fa-cogs"></i> Services
-      </a>
-    </li>
-    <li>
-      <a routerLink="/contact" routerLinkActive="active">
-        <i class="fa fa-envelope"></i> Contact
-      </a>
-    </li>
-  </ul>
-</div> -->
-
-
-
-
-
-
-
-
-<!--   <div class="col-sm-4">
-    <div class="sidenav">
-      <a href="#Unité d'Hydrologie Isotopique">Unité d'Hydrologie Isotopique</a>
-      <a href="#Unité  Radiopharmaceutiques">Unité  Radiopharmaceutiques</a>
- 
-    
-      <button class="dropdown-btn">Dropdown 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-container">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-      <a href="#contact">Search</a>
-    </div>
-    
-
-    
-  </div> -->
-
-  
-  
-  <div>  <router-outlet></router-outlet></div>  
-
-   
-<app-footer></app-footer>
-</div>

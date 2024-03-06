@@ -1,12 +1,14 @@
  body {
     margin: 0;
     font-family: Arial;
+   
   }
-  
  
   .container {
     float: center;
     width: 170;
-  
+    
 	padding: 15px 5px;
-  } 
+
+
+}

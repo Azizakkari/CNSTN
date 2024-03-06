@@ -55,4 +55,8 @@
     color: white;
     font-size: 35px;
     cursor: pointer;
+ 
+  }
+  img {
+    border-radius: 8px;
   }
