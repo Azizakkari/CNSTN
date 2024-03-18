@@ -9,10 +9,11 @@ import { AcceuilcnstnComponent } from './acceuilcnstn/acceuilcnstn.component';
 import  jsondata from   '../data/fichier.json';
 import jsondataproc from '../data/procedures.json'
 import { Header2Component } from './header2/header2.component';
+import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent, RouterLink, RouterLinkActive, Header2Component ],
+  imports: [RouterOutlet, FooterComponent, RouterLink, RouterLinkActive, Header2Component, HttpClientModule ],
   templateUrl: 'app.component.html',
   styleUrl: './app.component.css'
 })
