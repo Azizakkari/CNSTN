@@ -9,11 +9,11 @@ import { AcceuilcnstnComponent } from './acceuilcnstn/acceuilcnstn.component';
 import  jsondata from   '../data/fichier.json';
 import jsondataproc from '../data/procedures.json'
 import { Header2Component } from './header2/header2.component';
-import { HttpClientModule } from '@angular/common/http';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent, RouterLink, RouterLinkActive, Header2Component, HttpClientModule ],
+  imports: [RouterOutlet, FooterComponent, RouterLink, RouterLinkActive, Header2Component, MatSlideToggleModule ],
   templateUrl: 'app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,0 +1,57 @@
+
+<div class="container">
+    <mat-list>
+        <mat-divider></mat-divider>
+        <mat-list-item><b><h2>liste des utilisateurs</h2></b></mat-list-item>
+        <mat-divider></mat-divider>
+       
+      </mat-list>
+               
+    <table class="table table-bordered">
+      <thead>
+        <tr class="success">
+     
+          <th>nom</th>
+          <th>prenom</th>
+          <th>cin</th>
+          <th>E-mail</th>
+          <th>matricule</th>
+          <th>adresse</th>
+          <th>poste</th>
+          <th> telephone</th>
+                
+         
+       
+        
+          
+         
+
+          <th>Suppression</th>
+          <th> Mise à jour</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (user of utilisateur; track user.nom) {
+            <tr>
+                <td>{{user.nom}}</td>
+                <td>{{user.prenom}}</td>
+                <td>{{user.cin}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.matricule}}</td>
+                <td>{{user.adresse}}</td>
+                <td>{{user.poste}}</td>
+                <td>{{user.telephone}}</td>
+                <td> <button mat-raised-button color="warn">Suppression</button></td>
+                <td><button mat-raised-button color="primary">Mise à jour</button></td>
+            </tr>
+          } @empty {
+            <p>No products added yet!</p>
+          }
+
+
+        
+      </tbody>
+    </table>
+  </div>
+
+  
